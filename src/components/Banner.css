@@ -17,3 +17,12 @@
   padding-bottom: 70px;
   width: 800px;
 }
+
+.banner__info > button {
+  background-color: #EB8A04;
+  color: black;
+  text-transform: inherit;
+  margin-top: 20px;
+  padding: 0 40px;
+  font-weight: 600;
+}
