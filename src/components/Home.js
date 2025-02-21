@@ -1,9 +1,9 @@
 import React from 'react'
-import './Home'
+import './Home.css'
 
 function Home() {
   return (
-    <div>Home</div>
+    <div className='home'>Home</div>
   )
 }
 
