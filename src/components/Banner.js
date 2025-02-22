@@ -5,6 +5,7 @@ import { CiCalendarDate } from "react-icons/ci";
 import { TiArrowSortedDown } from "react-icons/ti";
 import { MdFace } from "react-icons/md";
 import { MdChildCare } from "react-icons/md";
+import { TiArrowSortedUp } from "react-icons/ti";
 
 function Banner() {
   return (
@@ -45,22 +46,43 @@ function Banner() {
               <div className='booking__header'>
                 <MdFace size={30} />
                 <h4>Adults</h4>
-                <TiArrowSortedDown size={30} />
+                {/* <TiArrowSortedDown size={30} /> */}
               </div>
               <div className='booking__bof'>
-                <h2>date</h2>
-                <h4>date</h4>
+                <h2>2</h2>
+                <div className=''>
+                  <TiArrowSortedUp size={30} />
+                </div>
+                <div>
+                  <button style={{border: 'none', background: 'transparent'}}>
+                  <TiArrowSortedDown size={30} />
+                  </button>
+                </div>
               </div>
             </div>
             <div className='banner__main'>
               <div className='booking__header'>
                 <MdChildCare size={30} />
                 <h4>Children</h4>
-                <TiArrowSortedDown size={30} />
               </div>
               <div className='booking__bof'>
-                <h2>date</h2>
-                <h4>date</h4>
+                <h2>2</h2>
+                <div className=''>
+                  <TiArrowSortedUp size={30} />
+                </div>
+                <div>
+                  <button style={{border: 'none', background: 'transparent'}}>
+                  <TiArrowSortedDown size={30} />
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className=''>
+              <h4 className='fadded__text'>
+                Hope You Have A Nice Experience...
+              </h4>
+              <div className='booking__button'>
+                <button>Check Availability</button>
               </div>
             </div>
           </div>
