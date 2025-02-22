@@ -8,6 +8,17 @@
   background: linear-gradient(180deg, #000 0%, rgba(0,0,0,0)100%), url('https://foto-hotel-phuket.nochi.com.ua/data/Photos/OriginalPhoto/15505/1550510/1550510458/Foto-Hotel-Phuket-Beachfront-Exterior.JPEG') center center;
 }
 
+.booking {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  width: 1200px;
+  height: 185px;
+  box-shadow: 0px 20px 90px -20px rgba(0,0,0,0.25);
+}
+
 .booking__block {
   display: flex;
   flex-direction: row;
