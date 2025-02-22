@@ -8,11 +8,26 @@
   background: linear-gradient(180deg, #000 0%, rgba(0,0,0,0)100%), url('https://foto-hotel-phuket.nochi.com.ua/data/Photos/OriginalPhoto/15505/1550510/1550510458/Foto-Hotel-Phuket-Beachfront-Exterior.JPEG') center center;
 }
 
+.booking__block {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 3px;
+  gap: 5px;
+}
+
+.banner__main {
+  width: 100px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #ccc;
+}
+
 .banner__info {
   display: flex;
   align-items: center;
   flex-direction: column;
-  color: white;
   padding-top: 15vh;
   padding-bottom: 70px;
   width: 800px;
@@ -20,9 +35,29 @@
 
 .banner__info > button {
   background-color: #EB8A04;
-  color: black;
   text-transform: inherit;
   margin-top: 20px;
   padding: 0 40px;
   font-weight: 600;
+}
+
+.banner__info > h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 672px;
+  height: 25px;
+  font-family: 'Lexend';
+  font-size: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.banner__header {
+  margin-top: 0;
+  color: #EB8A04 !important;
 }

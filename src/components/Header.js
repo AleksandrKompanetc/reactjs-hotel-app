@@ -1,6 +1,7 @@
 import React from 'react'
 import './Header.css'
 import Logo from '../assets/logo.svg'
+import { Button } from '@material-ui/core'
 
 const Header = () => {
   return (
@@ -15,7 +16,7 @@ const Header = () => {
       </div>
       <div className='header__right'>
         <div className='headerContainer'>
-          <button className='header__button'>Sign Up</button>
+          <Button className='header__button'>Sign Up</Button>
         </div>
       </div>
     </div>
