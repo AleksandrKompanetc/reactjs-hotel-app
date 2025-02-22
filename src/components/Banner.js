@@ -9,7 +9,7 @@ import { TiArrowSortedUp } from "react-icons/ti";
 
 function Banner() {
   return (
-    <>
+    <div className='banner__wrapper'>
       <div className='banner'>
         <div className='banner__info'>
           <h4>Enjoy Your Vacation With Our Hotels</h4>
@@ -88,7 +88,7 @@ function Banner() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
