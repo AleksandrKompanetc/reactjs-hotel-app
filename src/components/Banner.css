@@ -79,3 +79,15 @@
   margin-top: 0;
   color: #EB8A04 !important;
 }
+
+.fadded__text {
+  height: 75px;
+  font-family: 'Lexend';
+  width: 164px;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  color: #000;
+  opacity: 0.3;
+}
+
