@@ -1,5 +1,6 @@
-import React, {useState} from 'react';
-import './App.css';
+import React, {useState} from 'react'
+import Navbar from './components/Navbar';
+import './App.css'
 
 function App() {
   const [searchParams, setSearchParams] = useState({
@@ -10,6 +11,7 @@ function App() {
 
   return (
     <div className="app">
+      <Navbar />
       <main className='main-content'>
         <SearchBar searchParams={searchParams} setSearchParams={setSearchParams} />
         <HotelList searchParams={searchParams} />
@@ -18,4 +20,4 @@ function App() {
   );
 }
 
-export default App;
+export default App
