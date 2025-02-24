@@ -13,8 +13,8 @@ function App() {
     <div className="app">
       <Navbar />
       <main className='main-content'>
-        <SearchBar searchParams={searchParams} setSearchParams={setSearchParams} />
-        <HotelList searchParams={searchParams} />
+        {/* <SearchBar searchParams={searchParams} setSearchParams={setSearchParams} />
+        <HotelList searchParams={searchParams} /> */}
       </main>
     </div>
   );
