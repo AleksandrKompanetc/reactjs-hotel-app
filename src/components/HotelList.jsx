@@ -31,8 +31,10 @@ function HotelList() {
   return (
     <div className='hotel-list'>
       {hotels.map(hotel => (
-        
+
       ))}
     </div>
   )
 }
+
+export default HotelList
