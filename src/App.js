@@ -1,7 +1,8 @@
 import React, {useState} from 'react'
-import Navbar from './components/Navbar';
-import HotelList from './components/HotelList';
-import SearchBar from './components/SearchBar';
+import Navbar from './components/Navbar'
+import HotelList from './components/HotelList'
+import SearchBar from './components/SearchBar'
+import './styles/components.css'
 import './App.css'
 
 function App() {
