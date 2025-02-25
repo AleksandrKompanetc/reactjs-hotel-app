@@ -1,4 +1,5 @@
 import React from 'react';
+import HotelCard from './HotelCard';
 
 function HotelList() {
   const hotels = [
@@ -31,7 +32,7 @@ function HotelList() {
   return (
     <div className='hotel-list'>
       {hotels.map(hotel => (
-
+        <HotelCard key={hotel.id} hotel={hotel} />
       ))}
     </div>
   )

@@ -4,7 +4,7 @@ function HotelCard({hotel}) {
 
   return (
     <div className='hotel-card'>
-      <img src={hotel.image} alt={Hotel.name} className='hotel-image' />
+      <img src={hotel.image} alt={hotel.name} className='hotel-image' />
       <div className='hotel-info'>
         <h3>{hotel.name}</h3>
         <p className='location'>{hotel.location}</p>
