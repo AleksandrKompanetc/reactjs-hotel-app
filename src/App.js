@@ -26,8 +26,24 @@ function App() {
     <div className="app">
       <Navbar />
       <main className='main-content'>
-        <SearchBar searchParams={searchParams} setSearchParams={setSearchParams} />
-        <HotelList searchParams={searchParams} />
+        {!selectedHotel ? (
+          <>
+            <SearchBar searchParams={searchParams} setSearchParams={setSearchParams} />
+            <Filters filters={filters} setFilters={setFilters} />
+            <HotelList 
+              searchParams={searchParams} 
+              filters={filters}
+              onHotelSelect={handleHotelSelect}
+            />
+          </>
+        ) : showBookingForm ? (
+          <>
+            <button></button>
+          </>
+        ) : (
+
+        )
+        }
       </main>
     </div>
   );
