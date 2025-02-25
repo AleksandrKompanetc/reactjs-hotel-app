@@ -12,6 +12,16 @@ function App() {
     guests: 1
   })
 
+  const [filters, setFilters] = useState({
+    priceRange: '',
+    rating: '',
+    amenities: []
+  })
+
+  const [selectedHotel, setSelectedHotel] = useState(null)
+  const [selectedRoom, setSelectedRoom] = useState(null)
+  const [showBookingForm, setShowBookingForm] = useState(false)
+
   return (
     <div className="app">
       <Navbar />
