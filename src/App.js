@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import Navbar from './components/Navbar'
 import HotelList from './components/HotelList'
 import SearchBar from './components/SearchBar'
@@ -30,18 +30,32 @@ function App() {
           <>
             <SearchBar searchParams={searchParams} setSearchParams={setSearchParams} />
             <Filters filters={filters} setFilters={setFilters} />
-            <HotelList 
-              searchParams={searchParams} 
+            <HotelList
+              searchParams={searchParams}
               filters={filters}
               onHotelSelect={handleHotelSelect}
             />
           </>
         ) : showBookingForm ? (
           <>
-            <button></button>
+            <button onClick={handleBackToList} className='back-button'>
+              Back to Hotel List
+            </button>
+            <BookingForm
+              hotel={selectedHotel}
+              room={selectedRoom}
+            />
           </>
         ) : (
-
+          <>
+            <button onClick={handleBackToList} className='back-button'>
+              Back to Hotel List
+            </button>
+            <HotelDetails
+              hotel={selectedHotel}
+              onBookRoom={handleBooking}
+            />
+          </>
         )
         }
       </main>
