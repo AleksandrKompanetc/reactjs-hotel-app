@@ -27,7 +27,7 @@ function Filters({ filters, setFilters }) {
         </select>
       </div>
       <div className='filter-group'>
-        <label></label>
+        <label>Facilities</label>
         <div className='checkbox-group'>
           <label>
             <input
