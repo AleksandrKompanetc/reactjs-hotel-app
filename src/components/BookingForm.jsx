@@ -42,10 +42,19 @@ function BookingForm({hotel, room}) {
       <div className='form-group'>
         <label>Email</label>
         <input 
-          type="text"
+          type="email"
           value={bookingData.email}
           onChange={(e) => setBookingData(prev => ({...prev, email: e.target.value}))} 
           required
+        />
+      </div>
+
+      <div className='form-group'>
+        <label>Phone</label>
+        <input 
+          type="tel"
+          value={bookingData.phone} 
+          onChange={(e) => setBookingData(prev => ({...prev, phone: e.target.value}))}
         />
       </div>
     </form>
