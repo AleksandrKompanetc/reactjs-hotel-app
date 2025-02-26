@@ -29,7 +29,15 @@ function BookingForm({hotel, room}) {
         />
       </div>
 
-      
+      <div className='form-group'>
+        <label>LastName</label>
+        <input 
+          type="text"
+          value={bookingData.lastName}
+          onChange={(e) => setBookingData(prev => ({...prev, lastName: e.target.value}))}
+          required 
+        />
+      </div>
     </form>
   )
 }
