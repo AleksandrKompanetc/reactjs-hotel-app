@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Navbar from './components/Navbar'
+import Filters from './components/Filters'
 import HotelList from './components/HotelList'
 import SearchBar from './components/SearchBar'
 import './styles/components.css'
