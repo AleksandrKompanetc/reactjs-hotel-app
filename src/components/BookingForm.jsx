@@ -8,9 +8,11 @@ function BookingForm({hotel, room}) {
     phone: '',
     specialRequests: ''
   })
-  
+
   return (
-    <form></form>
+    <form className='booking-form' onSubmit={handleSubmit}>
+      <h2>Reservation number</h2>
+    </form>
   )
 }
 
