@@ -1,8 +1,16 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 function BookingForm({hotel, room}) {
+  const [bookingData, setBookingData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    phone: '',
+    specialRequests: ''
+  })
+  
   return (
-    <form action=""></form>
+    <form></form>
   )
 }
 
