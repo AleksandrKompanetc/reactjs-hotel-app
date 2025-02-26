@@ -12,6 +12,12 @@ function BookingForm({hotel, room}) {
   return (
     <form className='booking-form' onSubmit={handleSubmit}>
       <h2>Reservation number</h2>
+
+      <div className='booking-details'>
+        <h3>{hotel.name}</h3>
+        <p>{room.type}</p>
+        <p className='price'>${room.price}/night</p>
+      </div>
     </form>
   )
 }
