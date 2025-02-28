@@ -24,6 +24,12 @@ function App() {
   const [selectedRoom, setSelectedRoom] = useState(null)
   const [showBookingForm, setShowBookingForm] = useState(false)
 
+  const handleHotelSelect = (hotel) => {
+    setSelectedHotel(hotel)
+    setSelectedRoom(null)
+    setShowBookingForm(false)
+  }
+
   return (
     <div className="app">
       <Navbar />
