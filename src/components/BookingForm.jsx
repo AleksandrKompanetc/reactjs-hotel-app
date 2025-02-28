@@ -57,6 +57,14 @@ function BookingForm({hotel, room}) {
           onChange={(e) => setBookingData(prev => ({...prev, phone: e.target.value}))}
         />
       </div>
+
+      <div className='form-group'>
+        <label>Special wishes</label>
+        <textarea
+          value={bookingData.specialRequests}
+          onChange={(e) => setBookingData(prev => ({...prev, specialRequests: e.target.value}))}
+        />
+      </div>
     </form>
   )
 }
