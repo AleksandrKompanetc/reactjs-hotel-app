@@ -9,6 +9,12 @@ function BookingForm({hotel, room}) {
     specialRequests: ''
   })
 
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    // logic
+    console.log('Booking submitted', bookingData)
+  }
+
   return (
     <form className='booking-form' onSubmit={handleSubmit}>
       <h2>Reservation number</h2>
