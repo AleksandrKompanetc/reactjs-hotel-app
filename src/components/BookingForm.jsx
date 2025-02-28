@@ -65,6 +65,10 @@ function BookingForm({hotel, room}) {
           onChange={(e) => setBookingData(prev => ({...prev, specialRequests: e.target.value}))}
         />
       </div>
+
+      <button type='submit' className='submit-booking'>
+        Confirm reservation
+      </button>
     </form>
   )
 }
