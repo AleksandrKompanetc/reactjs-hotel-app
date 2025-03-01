@@ -35,6 +35,12 @@ function App() {
     setShowBookingForm(true)
   }
 
+  const handleBackToList = () => {
+    setSelectedHotel(null)
+    setSelectedRoom(null)
+    setShowBookingForm(false)
+  }
+
   return (
     <div className="app">
       <Navbar />
