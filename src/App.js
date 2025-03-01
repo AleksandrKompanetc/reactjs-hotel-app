@@ -4,6 +4,7 @@ import Filters from './components/Filters'
 import HotelList from './components/HotelList'
 import HotelDetails from './components/HotelDetails'
 import SearchBar from './components/SearchBar'
+import BookingForm from './components/BookingForm'
 import './styles/components.css'
 import './App.css'
 
