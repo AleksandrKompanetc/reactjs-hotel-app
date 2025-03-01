@@ -30,6 +30,11 @@ function App() {
     setShowBookingForm(false)
   }
 
+  const handleBooking = (room) => {
+    setSelectedRoom(room)
+    setShowBookingForm(true)
+  }
+
   return (
     <div className="app">
       <Navbar />
